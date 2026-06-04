@@ -7,64 +7,70 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        body { font-family: system-ui, -apple-system, 'Noto Sans SC', sans-serif; }
+        .card { transition: all 0.25s ease; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -20px rgb(15 23 42 / 0.35); }
     </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200">
-    <!-- 导航栏 -->
-    <nav class="bg-zinc-900 border-b border-zinc-800">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
-                <div class="w-9 h-9 bg-emerald-600 rounded-2xl flex items-center justify-center">
-                    <i class="fa-solid fa-microphone text-white text-2xl"></i>
+<body class="bg-slate-50 text-slate-900">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-4 justify-between items-center">
+            <a href="https://shanghai3168.github.io/privatevoicedictation/" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-microphone text-2xl"></i>
                 </div>
-                <div>
-                    <span class="font-semibold text-2xl tracking-tight">私语输入法</span>
-                    <span class="text-sm text-zinc-400 ml-1">PrivateVoice Dictation</span>
-                </div>
-            </div>
-            <div class="text-sm text-emerald-400 font-medium">
-                完全离线 · 稳定极速 · 专属词库
+                <span class="font-bold text-2xl">私语输入法</span>
+            </a>
+            <div class="flex flex-wrap items-center gap-3 text-sm font-medium">
+                <a class="text-slate-600 hover:text-blue-600" href="https://shanghai3168.github.io/privatevoicedictation/">Mini 官网</a>
+                <a class="text-blue-600" href="index.html">支持中心</a>
+                <a class="text-slate-600 hover:text-blue-600" href="support.html">支持与反馈</a>
+                <a class="text-slate-600 hover:text-blue-600" href="privacy.html">隐私政策</a>
             </div>
         </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto px-6 py-12">
-        <!-- Hero -->
-        <div class="text-center mb-16">
-            <h1 class="text-5xl font-semibold tracking-tight mb-4">支持中心</h1>
-            <p class="text-2xl text-zinc-400 mb-4">私语输入法 · PrivateVoice Dictation</p>
-            <p class="text-xl text-emerald-400">完全离线 · 数据永不出设备 · 一周自适应近零错误</p>
-            <p class="mt-4 text-zinc-500">四大本地模型 · SenseVoice / Qwen3-ASR / Moonshine / Parakeet</p>
-        </div>
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <section class="text-center mb-14">
+            <h1 class="text-5xl font-bold mb-6">支持中心</h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                PrivateVoice Dictation 是完全离线、隐私优先的 macOS 语音输入工具。
+            </p>
+        </section>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- 隐私政策卡片 -->
-            <a href="privacy.html" class="group block bg-zinc-900 rounded-3xl p-8 hover:bg-zinc-800 transition-all border border-zinc-700 hover:border-emerald-500">
-                <div class="flex items-center gap-3 mb-6">
-                    <i class="fa-solid fa-shield-halved text-4xl text-emerald-500"></i>
-                    <h2 class="text-3xl font-semibold">隐私政策</h2>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="support.html" class="card bg-white rounded-3xl p-8 border border-slate-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6">
+                    <i class="fa-solid fa-circle-question text-2xl"></i>
                 </div>
-                <p class="text-zinc-400 text-lg leading-relaxed">我们承诺数据永不出设备，所有处理均在本地完成。</p>
-                <div class="mt-8 text-emerald-400 group-hover:translate-x-2 transition">查看详情 →</div>
+                <h2 class="text-2xl font-bold mb-3">支持与反馈</h2>
+                <p class="text-slate-600 leading-relaxed">常见问题、更新日志、GitHub Issues 和邮箱联系方式。</p>
+                <div class="mt-6 text-blue-600 font-semibold">前往支持 →</div>
             </a>
 
-            <!-- 支持与反馈卡片 -->
-            <a href="support.html" class="group block bg-zinc-900 rounded-3xl p-8 hover:bg-zinc-800 transition-all border border-zinc-700 hover:border-emerald-500">
-                <div class="flex items-center gap-3 mb-6">
-                    <i class="fa-solid fa-circle-question text-4xl text-emerald-500"></i>
-                    <h2 class="text-3xl font-semibold">支持与反馈</h2>
+            <a href="privacy.html" class="card bg-white rounded-3xl p-8 border border-slate-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6">
+                    <i class="fa-solid fa-shield-halved text-2xl"></i>
                 </div>
-                <p class="text-zinc-400 text-lg leading-relaxed">常见问题 · 更新日志 · 联系方式 · 使用帮助</p>
-                <div class="mt-8 text-emerald-400 group-hover:translate-x-2 transition">前往支持 →</div>
+                <h2 class="text-2xl font-bold mb-3">隐私政策</h2>
+                <p class="text-slate-600 leading-relaxed">语音识别、词库处理和历史记录均在你的 Mac 本地完成。</p>
+                <div class="mt-6 text-blue-600 font-semibold">查看隐私政策 →</div>
             </a>
-        </div>
 
-        <div class="mt-16 text-center text-sm text-zinc-500">
-            <p>本应用基于开源项目 <a href="https://github.com/vorojar/VoiceSnap" class="hover:text-emerald-400 underline">VoiceSnap</a> 进行二次开发，遵循 MIT License。</p>
+            <a href="https://shanghai3168.github.io/privatevoicedictation/" class="card bg-white rounded-3xl p-8 border border-slate-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6">
+                    <i class="fa-solid fa-house text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-3">Mini 官网</h2>
+                <p class="text-slate-600 leading-relaxed">查看产品介绍、功能截图和 Mac App Store 下载入口。</p>
+                <div class="mt-6 text-blue-600 font-semibold">返回官网 →</div>
+            </a>
+        </section>
+
+        <footer class="mt-16 text-center text-sm text-slate-500">
+            <p>本应用基于开源项目 <a href="https://github.com/vorojar/VoiceSnap" class="text-blue-600 hover:underline">VoiceSnap</a> 进行二次开发，遵循 MIT License。</p>
             <p class="mt-2">© 2026 私语输入法团队</p>
-        </div>
-    </div>
+        </footer>
+    </main>
 </body>
 </html>

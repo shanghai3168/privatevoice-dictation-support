@@ -6,35 +6,61 @@
     <title>隐私政策 - 私语输入法</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, 'Noto Sans SC', sans-serif; }
+    </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200">
-    <div class="max-w-4xl mx-auto p-8">
-        <a href="index.html" class="inline-flex items-center text-emerald-400 mb-8 hover:underline">
-            ← 返回首页
-        </a>
-        
-        <h1 class="text-4xl font-bold mb-2">隐私政策</h1>
-        <p class="text-zinc-400">最后更新：2026年6月</p>
-
-        <div class="prose prose-invert mt-10">
-            <p><strong>私语输入法（PrivateVoice Dictation）</strong> 是一款完全离线的 macOS 语音输入工具。</p>
-            
-            <h2>我们承诺</h2>
-            <ul class="list-disc pl-5 space-y-2">
-                <li>所有语音识别、词库处理均在您的 Mac 本地完成</li>
-                <li>数据永不出设备，不会上传任何语音或文本</li>
-                <li>不收集任何个人信息</li>
-                <li>不使用任何第三方分析、追踪 SDK</li>
-                <li>词库与历史记录完全由您本地控制</li>
-            </ul>
-
-            <h2>技术细节</h2>
-            <p>使用四大本地模型：<strong>SenseVoice、Qwen3-ASR、Moonshine English、Parakeet</strong>。</p>
-            <p>CSV 词库自适应功能所有数据也仅保存在本地。</p>
-
-            <h2>App Store 隐私</h2>
-            <p>本应用在 App Store 隐私标签中标注为 <strong>“未收集数据”</strong>。</p>
+<body class="bg-slate-50 text-slate-900">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-4 justify-between items-center">
+            <a href="https://shanghai3168.github.io/privatevoicedictation/" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-microphone text-2xl"></i>
+                </div>
+                <span class="font-bold text-2xl">私语输入法</span>
+            </a>
+            <div class="flex flex-wrap items-center gap-3 text-sm font-medium">
+                <a class="text-slate-600 hover:text-blue-600" href="https://shanghai3168.github.io/privatevoicedictation/">Mini 官网</a>
+                <a class="text-slate-600 hover:text-blue-600" href="index.html">支持中心</a>
+                <a class="text-slate-600 hover:text-blue-600" href="support.html">支持与反馈</a>
+                <a class="text-blue-600" href="privacy.html">隐私政策</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <a href="index.html" class="inline-flex items-center text-blue-600 mb-8 hover:underline">← 返回支持中心</a>
+
+        <article class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10">
+            <h1 class="text-4xl font-bold mb-3">隐私政策</h1>
+            <p class="text-slate-500">最后更新：2026年6月</p>
+
+            <div class="mt-10 space-y-8 text-slate-700 leading-relaxed">
+                <p><strong>私语输入法（PrivateVoice Dictation）</strong> 是一款完全离线的 macOS 语音输入工具。</p>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">我们承诺</h2>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>所有语音识别、词库处理均在您的 Mac 本地完成</li>
+                        <li>数据永不出设备，不会上传任何语音或文本</li>
+                        <li>不收集任何个人信息</li>
+                        <li>不使用任何第三方分析、追踪 SDK</li>
+                        <li>词库与历史记录完全由您本地控制</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">技术细节</h2>
+                    <p>使用四大本地模型：<strong>SenseVoice、Qwen3-ASR、Moonshine English、Parakeet</strong>。</p>
+                    <p class="mt-2">CSV 词库自适应功能所有数据也仅保存在本地。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">App Store 隐私</h2>
+                    <p>本应用在 App Store 隐私标签中标注为 <strong>“未收集数据”</strong>。</p>
+                </section>
+            </div>
+        </article>
+    </main>
 </body>
 </html>

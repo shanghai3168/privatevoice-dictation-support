@@ -3,29 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>支持中心 - 私语输入法</title>
+    <title>支持与反馈 - 私语输入法</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, 'Noto Sans SC', sans-serif; }
+    </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200">
-    <div class="max-w-4xl mx-auto p-8">
-        <a href="index.html" class="inline-flex items-center text-emerald-400 mb-8 hover:underline">
-            ← 返回首页
-        </a>
-        
-        <h1 class="text-4xl font-bold mb-2">支持与反馈</h1>
-        <p class="text-zinc-400">PrivateVoice Dictation</p>
+<body class="bg-slate-50 text-slate-900">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-4 justify-between items-center">
+            <a href="https://shanghai3168.github.io/privatevoicedictation/" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-microphone text-2xl"></i>
+                </div>
+                <span class="font-bold text-2xl">私语输入法</span>
+            </a>
+            <div class="flex flex-wrap items-center gap-3 text-sm font-medium">
+                <a class="text-slate-600 hover:text-blue-600" href="https://shanghai3168.github.io/privatevoicedictation/">Mini 官网</a>
+                <a class="text-slate-600 hover:text-blue-600" href="index.html">支持中心</a>
+                <a class="text-blue-600" href="support.html">支持与反馈</a>
+                <a class="text-slate-600 hover:text-blue-600" href="privacy.html">隐私政策</a>
+            </div>
+        </div>
+    </nav>
 
-        <h2 class="mt-10">常见问题</h2>
-        <!-- 可以继续添加 details 标签 -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <a href="index.html" class="inline-flex items-center text-blue-600 mb-8 hover:underline">← 返回支持中心</a>
 
-        <h2 class="mt-10">更新日志</h2>
-        <ul>
-            <li><strong>v2.1.26</strong> - 集成四大本地模型 + CSV 批量词库自适应系统</li>
-        </ul>
+        <section class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10">
+            <h1 class="text-4xl font-bold mb-3">支持与反馈</h1>
+            <p class="text-slate-600 text-lg">PrivateVoice Dictation</p>
 
-        <h2 class="mt-10">联系我们</h2>
-        <p>GitHub Issues：<a href="https://github.com/shanghai3168/privatevoice-dictation-support/issues">提交问题</a></p>
-    </div>
+            <div class="mt-10 space-y-8">
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">常见问题</h2>
+                    <p class="text-slate-600 leading-relaxed">如果语音输入、模型切换、专属词库或历史勘误遇到问题，请优先确认 App 已获得麦克风、辅助功能和输入相关权限。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">更新日志</h2>
+                    <ul class="list-disc pl-6 text-slate-700 space-y-2">
+                        <li><strong>v2.1.26</strong> - 集成四大本地模型 + CSV 批量词库自适应系统</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">联系我们</h2>
+                    <div class="space-y-3 text-slate-700">
+                        <p>邮箱：<a class="text-blue-600 hover:underline" href="mailto:shanghai3168@gmail.com">shanghai3168@gmail.com</a></p>
+                        <p>GitHub Issues：<a class="text-blue-600 hover:underline" href="https://github.com/shanghai3168/privatevoice-dictation-support/issues">提交问题</a></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
